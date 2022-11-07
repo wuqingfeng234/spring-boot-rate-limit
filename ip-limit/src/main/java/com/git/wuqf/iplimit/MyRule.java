@@ -11,6 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 public class MyRule implements CurrentRuleHandler {
     @Override
     public CurrentProperty rule(HttpServletRequest request) {
-        return CurrentPropertyFactory.of("IP",100,0,true,true);
+        return CurrentPropertyFactory.of("127.0.0.1",100,0,true,true);
     }
 }
